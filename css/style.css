@@ -8,16 +8,39 @@
 
 .main{
     height: 100vh;
+    min-height: 1200px;
     display:flex;
     flex-flow: column;
     font-family: "Arial", sans-serif;
 }
 
 .banner-image{
-    flex: 0 0 50%;
+    flex: 0 0 30%;
+    background: url("../img/pigs-copy.jpg") center center no-repeat;
     background-size: cover;
-    background: url("../img/pigs.jpg") center;
 }
+
+@media only screen and (min-width: 550px){
+    .main {
+        min-height: 1000px;
+    }
+
+    .banner-image{
+        flex: 0 0 40%;
+    }
+}
+
+@media only screen and (min-width: 960px){
+    .main {
+        min-height: 0;
+    }
+
+    .banner-image{
+        flex: 0 0 40%;
+    }
+}
+
+
 
 .header{
     display: flex;
