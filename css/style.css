@@ -1,7 +1,64 @@
-body{
-    background: green;
+.main{
+    height: 100vh;
+    display:flex;
+    flex-flow: column;
+    font-family: "Arial", sans-serif;
 }
 
 .banner-image{
-    
+    flex: 0 0 50%;
+    background-size: cover;
+    background: url("../img/pigs.jpg") center;
 }
+
+.header{
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    display: flex;
+    flex-flow: column;
+    flex: 0 0 80%;
+    align-items: center;
+    text-align: center;
+}
+
+.content > h1,
+.content > .line,
+.content > p {
+    margin: 0;
+    margin-bottom: 2rem;
+    color: #555555;
+}
+
+.content > h1{
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #626e7a;
+}
+
+.line{
+    border-bottom: 1px solid lightgrey;
+    width: 150px;
+}
+
+.register-button{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 1rem 4rem;
+    background: linear-gradient(to right, #6100A5, #EC0677);
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    /*box-shadow: inset 0 -3px 0 black;*/
+}
+
+.register-button:hover {
+    opacity: .7;
+}
+
+
