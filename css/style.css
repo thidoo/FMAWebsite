@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'neutromyob';
+    src:
+    url('../fonts/neutromyob-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/neutromyob-regular.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/neutromyob-regular.otf')  format('opentype');
+}
+
 .main{
     height: 100vh;
     display:flex;
@@ -24,6 +32,7 @@
     flex: 0 0 80%;
     align-items: center;
     text-align: center;
+    font-family: neutromyob, sans-serif;
 }
 
 .content > h1,
