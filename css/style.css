@@ -7,46 +7,59 @@
 }
 
 .main{
-    height: 100vh;
-    min-height: 1200px;
-    display:flex;
-    flex-flow: column;
     font-family: "Arial", sans-serif;
 }
 
+.banner{
+    display: flex;
+    height: 30vh;
+    position: relative;
+}
+
 .banner-image{
-    flex: 0 0 30%;
+    flex: 1 1 auto;
     background: url("../img/pigs-copy.jpg") center center no-repeat;
     background-size: cover;
 }
 
-@media only screen and (min-width: 550px){
-    .main {
-        min-height: 1000px;
-    }
+.banner-logo{
+    position: absolute;
+    width: 30px;
+    height: auto;
+}
 
-    .banner-image{
-        flex: 0 0 40%;
+@media only screen and (min-width: 550px){
+
+    .banner{
+        /*height: 40vh;*/
+        flex: 0 0 40vh;
     }
 }
 
 @media only screen and (min-width: 960px){
+
     .main {
-        min-height: 0;
+        height: 100vh;
+        display:flex;
+        flex-flow: column;
     }
 
-    .banner-image{
-        flex: 0 0 40%;
+    .header{
+        flex: 1 1 auto;
+    }
+
+    .banner{
+        /*height: 50vh;*/
+        flex: 0 0 50vh;
     }
 }
 
-
-
 .header{
     display: flex;
-    flex: 1 1 auto;
+    /*flex: 1 1 auto;*/
     align-items: center;
     justify-content: center;
+    padding: 4rem 0;
 }
 
 .content{
