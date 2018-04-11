@@ -17,9 +17,15 @@
 }
 
 .banner-image{
+    display: flex;
     flex: 1 1 auto;
     background: url("../img/pigs-copy.jpg") center center no-repeat;
     background-size: cover;
+}
+
+.banner-image > div{
+    flex: 1 1 auto;
+    background: rgba(0,0,0,0.3);
 }
 
 .banner-logo{
